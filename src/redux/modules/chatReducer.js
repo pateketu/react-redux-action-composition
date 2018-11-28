@@ -1,7 +1,7 @@
 import {CHAT_DATA_LOADED} from './chatActions'
 import joinMessagesAndMembers from './domain/joinMessagesAndMembers';
 
-export default function reducer(state=[], action={type:undefined, payLoad:{messages:[],memebers:[]}}){
+export default function reducer(state=[], action={type:'', payLoad:{messages:[],memebers:[]}}){
     let nextState = state;
 
     switch(action.type){

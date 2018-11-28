@@ -1,7 +1,7 @@
 import {getMessages, getMembers} from '../../data/data';
 export const CHAT_DATA_LOADED = 'react-redux-action-composition-app/chat/DATA_LOAD';
 
-function chatLoaded(messages, memebers){
+export function chatLoaded(messages, memebers){
     return{
         type:CHAT_DATA_LOADED,
         payLoad:{messages, memebers}
