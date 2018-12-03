@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chat Component Renders correctly 1`] = `
+<div>
+  <div
+    className="chatItem"
+  >
+    Test Message
+     by 
+    <b>
+      Martin
+    </b>
+      @  
+    9/2/2017 4:27:38
+  </div>
+</div>
+`;
+
+exports[`Chat Component shallow renders 1`] = `
+<div>
+  <div
+    className="chatItem"
+  >
+    Test Message
+     by 
+    <b>
+      Martin
+    </b>
+      @  
+    9/2/2017 4:27:38
+  </div>
+</div>
+`;
