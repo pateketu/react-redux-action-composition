@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders snapshot as expected 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <App>
+    <Connect(Chat)>
+      <Chat
+        chat={
+          Array [
+            Object {
+              "id": "cd445e6d-e514-424f-ba8f-16ec842002c6",
+              "message": "Test Message",
+              "timestamp": "2017-02-09T04:27:38Z",
+              "user": Object {
+                "avatar": "http://dummyimage.com/100x100.png/5fa2dd/ffffff",
+                "email": "mbradley0@google.it",
+                "firstName": "Martin",
+                "id": "e837c9f5-247f-445f-bcc3-7d434348336b",
+                "ip": "166.124.172.160",
+                "lastName": "Bradley",
+              },
+              "userId": "e837c9f5-247f-445f-bcc3-7d434348336b",
+            },
+          ]
+        }
+        loadChat={[Function]}
+      >
+        <div>
+          <div
+            className="chatItem"
+          >
+            Test Message
+             by 
+            <b>
+              Martin
+            </b>
+              @  
+            9/2/2017 4:27:38
+          </div>
+        </div>
+      </Chat>
+    </Connect(Chat)>
+  </App>
+</Provider>
+`;
