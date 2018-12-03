@@ -31,7 +31,6 @@ describe('App', ()=>{
     });  
 
     it('renders snapshot as expected', ()=>{ 
-
         
         const wrapper = mount(<Provider store={store} > 
             <App/>
