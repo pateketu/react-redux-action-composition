@@ -2,7 +2,7 @@
 
 A simple React + Redux project to retrieve, render data returned from an API.
 
-App has one primary component "Chat" which pulls data from two different APIs (getMembers & getMessages) and displays Chat message. Mergeing of Members and Messages to create a "Chat item" can be done in the component itself, but that makes the "Chat" component a bit heavy. Data logic such as merging of data from differtent sources should be outside of the Component. One option is to use library like [Reselct](https://github.com/reduxjs/reselect) and abstract out merging logic into it.
+App has one primary component "Chat" which pulls data from two different APIs (getMembers & getMessages) and displays Chat message. Mergeing of Members and Messages to create a "Chat item" can be done in the component itself, but that makes the "Chat" component a bit heavy. Data logic such as merging of data from differtent sources should be outside of the Component. One option is to use library like [Reselect](https://github.com/reduxjs/reselect) and abstract out merging logic into it.
 
 This App shows another approach of merging the data via composition action, idea is to pull data from getMembers and getMessages and then dispatch an action to build the chat datasource. 
 
