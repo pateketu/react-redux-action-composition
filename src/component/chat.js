@@ -3,6 +3,20 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import loadChat from '../redux/modules/chatActions';
 import {formatDate} from '../utils/dateUtil';
+import styled from 'styled-components';
+
+const ChatItem = styled.div`
+        display:flex;
+
+        div:first-child{
+            width:200px;
+           
+        }
+        div{
+            margin: 10px;
+        }
+`;
+
 export class Chat extends React.Component{   
 
     componentDidMount(){              
@@ -13,9 +27,17 @@ export class Chat extends React.Component{
         return <div>
             {
                 this.props.chat.map((chatItem) =>{
-                    return <div key={chatItem.id} className='chatItem'>
-                        {chatItem.message} by <b>{chatItem.user.firstName}</b>  @  {formatDate(chatItem.timestamp)}
-                    </div>
+                    return <ChatItem key={chatItem.id}>
+                       <div> 
+                            {chatItem.message}
+                        </div>
+                         <div> 
+                             by <b>{chatItem.user.firstName}</b>
+                         </div> 
+                         <div>
+                            @  {formatDate(chatItem.timestamp)}
+                         </div>
+                    </ChatItem>
                 })
             }
         </div>;

@@ -3,15 +3,21 @@
 exports[`Chat Component Renders correctly 1`] = `
 <div>
   <div
-    className="chatItem"
+    className="sc-bdVaJa fWihYs"
   >
-    Test Message
-     by 
-    <b>
-      Martin
-    </b>
+    <div>
+      Test Message
+    </div>
+    <div>
+      by 
+      <b>
+        Martin
+      </b>
+    </div>
+    <div>
       @  
-    9/2/2017 4:27:38
+      9/2/2017 4:27:38
+    </div>
   </div>
 </div>
 `;

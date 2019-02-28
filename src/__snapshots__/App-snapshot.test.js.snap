@@ -36,17 +36,61 @@ exports[`App renders snapshot as expected 1`] = `
         loadChat={[Function]}
       >
         <div>
-          <div
-            className="chatItem"
-          >
-            Test Message
-             by 
-            <b>
-              Martin
-            </b>
-              @  
-            9/2/2017 4:27:38
-          </div>
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": true,
+                    "lastClassName": "fWihYs",
+                    "rules": Array [
+                      "
+        display:flex;
+
+        div:first-child{
+            width:200px;
+           
+        }
+        div{
+            margin: 10px;
+        }
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="sc-bdVaJa fWihYs"
+              >
+                <div>
+                  Test Message
+                </div>
+                <div>
+                  by 
+                  <b>
+                    Martin
+                  </b>
+                </div>
+                <div>
+                  @  
+                  9/2/2017 4:27:38
+                </div>
+              </div>
+            </StyledComponent>
+          </styled.div>
         </div>
       </Chat>
     </Connect(Chat)>

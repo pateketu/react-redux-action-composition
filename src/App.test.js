@@ -39,8 +39,8 @@ describe('App', ()=>{
             messagePromise,
             memberPromise
         ]).then(()=>{   
-            wrapper.update();            
-            expect(wrapper.find('.chatItem').children()).toHaveLength(1);
+            wrapper.update();        
+            expect(wrapper.find('StyledComponent').children()).toHaveLength(1);
         });
     });
 });
